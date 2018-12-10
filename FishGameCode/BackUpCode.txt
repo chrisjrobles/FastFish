@@ -1,0 +1,33 @@
+Robert said this was code that he deleted, so I deleted it but put the code here as a backup.
+
+
+
+public class Collision {
+	
+
+	// Takes the x and y arrays for the fish and hook object, loops through them and returns true
+	// if both some x and some y in the fish and hook objects are equal to each other
+	public boolean checkCollision(int[] fishXArr, int[] fishYArr, int[] hookXArr, int[] hookYArr) {
+		
+		boolean xColl = false;
+		boolean yColl = false;
+		
+		for (int x1 = 0; x1 < hookXArr.length; x1++) {
+			for (int x2 = 0; x2 < fishXArr.length; x2++) {
+				if (hookXArr[x1] == fishXArr[x2])
+					xColl = true;
+			}
+		}
+		
+		for (int y1 = 0; y1 < hookYArr.length; y1++) {
+			for (int y2 = 0; y2 < fishYArr.length; y2++) {
+				if (hookYArr[y1] == fishYArr[y2])
+					yColl = true;
+			}
+		}
+		
+		
+		
+		
+		return xColl && yColl;
+	}

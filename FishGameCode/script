@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#these are not utilized yet but contain some examples
+#discussed in the presentation - included to show that
+#they compile successfully
+
+javac Ocean.java
+javac Shield.java
+javac Bubble.java
+javac Sky.java
+javac MyKeyListener.java
+javac GameTime.java
+
+#this is all that is needed to run the game
+javac FishMain.java
+java FishMain
